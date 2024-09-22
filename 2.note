@@ -1,0 +1,40 @@
+1 :
+key operations performed by the algorithm:
+
+Outer Loop: Iterates n times (where n is the length of the array).
+Inner Loop: Iterates from 0 to n-i-1, meaning it decreases the range with each iteration of the outer loop.
+Comparison: For each pair of adjacent elements (arr[j] and arr[j+1]), it compares them to check if they are in the wrong order.
+Swapping: If the elements are out of order, it swaps them.
+
+
+2 :
+Worst Case: In the worst-case scenario (e.g., the array is sorted in reverse order), every element must be compared with every other element. This results in:
+
+The outer loop runs n times.
+The inner loop runs n-i-1 times, leading to approximately n comparisons for the first pass, n-1 for the second, down to 1 for the last.
+
+
+Average Case: The average case also leads to a similar calculation, yielding:
+ o(n²)
+
+Best Case: If the array is already sorted, only the outer loop runs through, leading to:
+ o(n)
+
+ Final Complexity: Therefore, the overall Big O complexity of the algorithm is:
+
+Worst Case: O(n²)
+Average Case: O(n²)
+Best Case: O(n)
+
+
+
+3 :
+Optimized Bubble Sort :
+mplementing a flag to check if any swaps were made during a pass can help improve the best-case performance to 
+𝑂(𝑛).
+
+Alternative Algorithms:
+
+Merge Sort
+Quick Sort
+Heap Sort
